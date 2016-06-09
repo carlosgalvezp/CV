@@ -48,7 +48,8 @@
 \def \widthone {3.1cm}
 \def \widthtwo {12.25cm}
 
-
+\usepackage[backend=bibtex,style=numeric-comp,sorting=none,firstinits=true,isbn=false,doi=false]{biblatex}
+\addbibresource{cv.bib}
 \begin{document}
 
 \pagestyle{empty} % Removes page numbering
@@ -91,7 +92,7 @@
 
 \textsc{Oct} 2012 - \textsc{Oct} 2013 & \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
 & Development of an automatic parking lot occupancy estimation system based on computer vision techniques. Involved in the national project "Ciudad 2020". Based on OpenCV and Qt libraries. In collaboration with the Group of Application of Visual Telecommunications at ETSIT-UPM. 
-Scientific paper published in ITS. \\
+Scientific paper published in ITS \cite{Galvez2015}. \\
 \multicolumn{2}{c}{} \\
 
 % --------------------------------------------------
@@ -114,7 +115,7 @@ Scientific paper published in ITS. \\
 \noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}	
 \textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Systems, Control and Robotics, Msc} at KTH Royal Institute of Technology, Stockholm (Sweden). \\
-& Master Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' | \small Advisor: Prof. John \textsc{Folkesson}, \small Examiner: Prof. Patric \textsc{Jensfelt}.
+& Master Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' \cite{Galvez2015Thesis}| \small Advisor: Prof. John \textsc{Folkesson}, \small Examiner: Prof. Patric \textsc{Jensfelt}.
 \textsc{GPA}: A\\
 &\\
 
@@ -197,13 +198,17 @@ Git repository: \href{https://github.com/carlosgalvezp}{https://github.com/carlo
 
 \section{Interests}
 \noindent
-Travelling, photography, hiking, cycling, reading, movies, music.
+Travelling, photography, hiking, cycling, reading, movies, music.  
 
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
 \section{Publications}
 \noindent
-\begin{tabular}{R{\widthone}|L{\widthtwo}}
-\textsc{2015} & Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving\\
-\textsc{2015} & Vacant parking area estimation through background subtraction and transience map analysis
-\end{tabular}
+\begingroup
+\renewcommand{\section}[2]{}%
+%\renewcommand{\chapter}[2]{}% for other classes
+\printbibliography[heading=bibintoc]
+\endgroup
 %----------------------------------------------------------------------------------------
 \end{document}
