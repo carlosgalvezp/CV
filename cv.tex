@@ -24,7 +24,7 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[a4paper,12pt]{article} % Default font size and paper size
+\documentclass[a4paper,10pt]{article} % Default font size and paper size
 \usepackage{fourier}
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
@@ -45,8 +45,8 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
-\def \widthone {3.75cm}
-\def \widthtwo {12cm}
+\def \widthone {3.1cm}
+\def \widthtwo {12.25cm}
 
 
 \begin{document}
@@ -60,48 +60,50 @@
 \par{\centering{\Huge Carlos Gálvez}\bigskip\par} % Your name
 
 \section{Personal Information}
-
-\begin{tabular}{R{\widthone}L{\widthtwo}}
-\textsc{Date of Birth} & December 29\textsuperscript{th}  1991.  \\
-\textsc{Nationality:} & Spanish. \\
-\textsc{Address:} & Nordostpassagen 23 Lgh 1203, 413 11 Gothenburg, Sweden.\\
-\textsc{Mobile Phone:} & +46 720328047\\
-\textsc{E-mail:} & \href{mailto:carlosgalvezp@gmail.com}{carlosgalvezp@gmail.com}
+\noindent
+\begin{tabular}{R{\widthone}|L{\widthtwo}}
+\textsc{Date of Birth} & December 29\textsuperscript{th}  1991  \\
+\textsc{Nationality} & Spanish \\
+\textsc{Address} & Nordostpassagen 23 Lgh 1203, 413 11 Gothenburg, Sweden\\
+\textsc{Mobile Phone} & +46 72 032 8047\\
+\textsc{E-mail} & \href{mailto:carlosgalvezp@gmail.com}{carlosgalvezp@gmail.com}
 \end{tabular}
+
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE 
 %----------------------------------------------------------------------------------------
 
 \section{Experience}
-
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Aug} 2015 - \textsc{Present}& \textbf{Software Developer - Sensor Fusion} at Volvo Car Corporation\\
-& TODO\\
+& Development of algorithms for raw sensor data fusion for on-road obstacle detection, in the context of Volvo Cars' autonomous driving project \emph{Drive Me}. Working with lidar, radar and camera data. High-performance implementation to meet real-time requirements. Experience in safety-critical coding practices as well as the ISO 26262 standard. Agile development and continuous integration workflow.  \\
 \multicolumn{2}{c}{} \\
 
 %------------------------------------------------
 
-\textsc{Jun} 2014 - \textsc{Jul} 2014 & Research Engineer at \textsc{KTH}, Sweden \emph{}\\
-& TODO\\
+\textsc{Jun} 2014 - \textsc{Jul} 2014 & \textbf{Research Engineer} at \textsc{KTH}, Sweden\\
+& Development of an autonomous robot to perform 3D mapping with Kinect-like cameras in hardly accesible environments. Based on ROS, OpenCV and PCL. In collaboration with the Computer Vision and Active Percepction Lab (CVAP) at KTH and Trafikverket (Swedish Transport Administration).\\
 \multicolumn{2}{c}{} \\
 
 % --------------------------------------------------
 
-\textsc{Oct} 2012 - \textsc{Oct} 2013 & Fellowship at E.T.S.I.T. UPM, Spain\emph{}\\
-& TODO\\
+\textsc{Oct} 2012 - \textsc{Oct} 2013 & \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
+& Development of an automatic parking lot occupancy estimation system based on computer vision techniques. Involved in the national project "Ciudad 2020". Based on OpenCV and Qt libraries. In collaboration with the Group of Application of Visual Telecommunications at ETSIT-UPM. 
+Scientific paper published in ITS. \\
 \multicolumn{2}{c}{} \\
 
 % --------------------------------------------------
 
-\textsc{Oct} 2011 - \textsc{Oct} 2012 & Fellowship at E.T.S.I.T. UPM, Spain\emph{}\\
-& TODO\\
+\textsc{Oct} 2011 - \textsc{Oct} 2012 & \textbf{Fellowship} at E.T.S.I.T. UPM\\
+& Development and integration of a new educational platform for the study of ARM microcontrollers at the Electronic Systems Laboratory. In collaboration with the Electrical Engineering Department at ETSIT-UPM\\
 \multicolumn{2}{c}{} \\
 
 % --------------------------------------------------
 
-\textsc{Oct} 2009 - \textsc{Oct} 2010 & Fellowship at E.T.S.I.T. UPM, Spain\emph{}\\
-& TODO\\
+\textsc{Oct} 2009 - \textsc{Oct} 2010 &  \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
+& Design of an automated optical handwritten character recognition system (OCR), with the aim of making easier and more efficient various teaching and administrative tasks. In collaboration with the Telematics Engineering Department at ETSIT-UPM.\\
 \multicolumn{2}{c}{} \\
 \end{tabular}
 
@@ -109,32 +111,31 @@
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}	
-\textsc{Aug} 2013 - \textsc{Jun} 2015 & Systems, Control and Robotics, Msc at KTH Royal Institute of Technology, Stockholm (Sweden). \\
-& Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' | \small Advisor: Prof. John \textsc{Folkesson}, \small Examiner: Prof. Patric \textsc{Jensfelt}\\
-&\normalsize \textsc{GPA}: A\\
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Systems, Control and Robotics, Msc} at KTH Royal Institute of Technology, Stockholm (Sweden). \\
+& Master Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' | \small Advisor: Prof. John \textsc{Folkesson}, \small Examiner: Prof. Patric \textsc{Jensfelt}.
+\textsc{GPA}: A\\
 &\\
 
 %------------------------------------------------
 
-\textsc{Aug} 2013 - \textsc{Jun} 2015 & Civilingenjörsutbilding, MSc Electrical Engineering at KTH Royal Institute of Technology, Stockholm (Sweden). \\
-& Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' | \small Advisor: Prof. John \textsc{Smith}, \small Examiner: Prof. Patric \textsc{Jensfelt}\\
-&\normalsize \textsc{GPA}: A\\
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Civilingenjörsutbilding, MSc Electrical Engineering} at KTH Royal Institute of Technology, Stockholm (Sweden). \\
 &\\
 
 %------------------------------------------------
 
-\textsc{Sep} 2009 - \textsc{Jun} 2015 & Telecommunication Engineering, 5-year programme, MSc accredited by ABET), at E.T.S.I. Telecomunicación, Universidad Politécnica de Madrid, Madrid (Spain). GPA: 9.20/10.0\\
+\textsc{Sep} 2009 - \textsc{Jun} 2015 & \textbf{Telecommunication Engineering, (5-year programme, MSc accredited by ABET)}, at E.T.S.I. Telecomunicación, Universidad Politécnica de Madrid, Madrid (Spain). GPA: 9.20/10.0\\
 &\\
 
 
 \end{tabular}
 
-
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Sep} 2015 - \textsc{Present }& Autonomous quadcopter. \\
 & \\
@@ -157,7 +158,7 @@
 %----------------------------------------------------------------------------------------
 
 \section{Honours and Awards}
-
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 2009 - 2013 & Extraordinary Academic Performance Scholarship (Madrid Government)\\
 
@@ -169,11 +170,11 @@
 %----------------------------------------------------------------------------------------
 
 \section{Languages}
-
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Spanish:} & Mothertongue\\
-\textsc{English:} & Fluent \\
-\textsc{Swedish:} & Advanced
+\textsc{English:} & Fluent \emph{TOEFL iBT: 110/120, September 2012 (Spain)} \\
+\textsc{Swedish:} & Advanced, \emph{CEFR: B2, June 2015 (Sweden)}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
@@ -181,19 +182,28 @@
 %----------------------------------------------------------------------------------------
 
 \section{Software skills}
+\noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
-\textsc{Proficient} & Java, C, C++, \textsc{Matlab} \& \textsc{Simulink}, OpenCV, PCL, ROS, Qt\\
-\textsc{Intermediate} & OpenGL, OpenCL, CUDA, Bash scripting, Git, Gerrit, \LaTeX \\
+\textsc{Proficient} & Java, C, C++, Python, \textsc{Matlab} \& \textsc{Simulink}, OpenCV, PCL, ROS, Qt\\
+\textsc{Intermediate} & Linux, CMake, OpenGL, OpenCL, CUDA, Bash scripting, Git, Gerrit, \LaTeX \\
 \textsc{Basic} & HTML, CSS, JavaScript, J2EE, SQL, Android, ASM, VHDL\\
 \end{tabular}
+
+Git repository: \href{https://github.com/carlosgalvezp}{https://github.com/carlosgalvezp}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
 
 \section{Interests}
+\noindent
+Travelling, photography, hiking, cycling, reading, movies, music.
 
-TO-DO
-
+\section{Publications}
+\noindent
+\begin{tabular}{R{\widthone}|L{\widthtwo}}
+\textsc{2015} & Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving\\
+\textsc{2015} & Vacant parking area estimation through background subtraction and transience map analysis
+\end{tabular}
 %----------------------------------------------------------------------------------------
 \end{document}
