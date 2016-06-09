@@ -45,9 +45,11 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+
+
 \def \widthone {3.1cm}
 \def \widthtwo {12.25cm}
-
+\def \vspac {0.25cm}
 \usepackage[backend=bibtex,style=numeric-comp,sorting=none,firstinits=true,isbn=false,doi=false]{biblatex}
 \addbibresource{cv.bib}
 \begin{document}
@@ -61,6 +63,7 @@
 \par{\centering{\Huge Carlos Gálvez}\bigskip\par} % Your name
 
 \section{Personal Information}
+\vspace{\vspac}
 \noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Date of Birth} & December 29\textsuperscript{th}  1991  \\
@@ -72,137 +75,153 @@
 
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE 
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-\noindent
-\begin{tabular}{R{\widthone}|L{\widthtwo}}
-\textsc{Aug} 2015 - \textsc{Present}& \textbf{Software Developer - Sensor Fusion} at Volvo Car Corporation\\
-& Development of algorithms for raw sensor data fusion for on-road obstacle detection, in the context of Volvo Cars' autonomous driving project \emph{Drive Me}. Working with lidar, radar and camera data. High-performance implementation to meet real-time requirements. Experience in safety-critical coding practices as well as the ISO 26262 standard. Agile development and continuous integration workflow.  \\
-\multicolumn{2}{c}{} \\
-
-%------------------------------------------------
-
-\textsc{Jun} 2014 - \textsc{Jul} 2014 & \textbf{Research Engineer} at \textsc{KTH}, Sweden\\
-& Development of an autonomous robot to perform 3D mapping with Kinect-like cameras in hardly accesible environments. Based on ROS, OpenCV and PCL. In collaboration with the Computer Vision and Active Percepction Lab (CVAP) at KTH and Trafikverket (Swedish Transport Administration).\\
-\multicolumn{2}{c}{} \\
-
-% --------------------------------------------------
-
-\textsc{Oct} 2012 - \textsc{Oct} 2013 & \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
-& Development of an automatic parking lot occupancy estimation system based on computer vision techniques. Involved in the national project "Ciudad 2020". Based on OpenCV and Qt libraries. In collaboration with the Group of Application of Visual Telecommunications at ETSIT-UPM. 
-Scientific paper published in ITS \cite{Galvez2015}. \\
-\multicolumn{2}{c}{} \\
-
-% --------------------------------------------------
-
-\textsc{Oct} 2011 - \textsc{Oct} 2012 & \textbf{Fellowship} at E.T.S.I.T. UPM\\
-& Development and integration of a new educational platform for the study of ARM microcontrollers at the Electronic Systems Laboratory. In collaboration with the Electrical Engineering Department at ETSIT-UPM\\
-\multicolumn{2}{c}{} \\
-
-% --------------------------------------------------
-
-\textsc{Oct} 2009 - \textsc{Oct} 2010 &  \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
-& Design of an automated optical handwritten character recognition system (OCR), with the aim of making easier and more efficient various teaching and administrative tasks. In collaboration with the Telematics Engineering Department at ETSIT-UPM.\\
-\multicolumn{2}{c}{} \\
-\end{tabular}
-
-%----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\vspace{\vspac}
 \section{Education}
+\vspace{\vspac}
 \noindent
-\begin{tabular}{R{\widthone}|L{\widthtwo}}	
-\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Systems, Control and Robotics, Msc} at KTH Royal Institute of Technology, Stockholm (Sweden). \\
-& Master Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' \cite{Galvez2015Thesis}| \small Advisor: Prof. John \textsc{Folkesson}, \small Examiner: Prof. Patric \textsc{Jensfelt}.
+\begin{tabular}{R{\widthone}|p{\widthtwo}}	
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Systems, Control and Robotics, Msc} \\
+& KTH Royal Institute of Technology, Stockholm, Sweden. \\ 
+& Master Thesis: ``Grid-Based Multi-Sensor Fusion for On-Road Obstacle Detection: Application to Autonomous Driving'' \cite{Galvez2015Thesis}. Advisor: Prof. John \textsc{Folkesson}, Examiner: Prof. Patric \textsc{Jensfelt}.
 \textsc{GPA}: A\\
 &\\
 
 %------------------------------------------------
 
-\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Civilingenjörsutbilding, MSc Electrical Engineering} at KTH Royal Institute of Technology, Stockholm (Sweden). \\
+\textsc{Aug} 2013 - \textsc{Jun} 2015 & \textbf{Civilingenjörsutbilding, MSc Electrical Engineering} \\
+& KTH Royal Institute of Technology, Stockholm, Sweden \\
 &\\
 
 %------------------------------------------------
 
-\textsc{Sep} 2009 - \textsc{Jun} 2015 & \textbf{Telecommunication Engineering, (5-year programme, MSc accredited by ABET)}, at E.T.S.I. Telecomunicación, Universidad Politécnica de Madrid, Madrid (Spain). GPA: 9.20/10.0\\
+\textsc{Sep} 2009 - \textsc{Jun} 2015 & \textbf{Telecommunication Engineering, (5-year programme, MSc accredited by ABET)} \\
+& E.T.S.I. Telecomunicación, Universidad Politécnica de Madrid, Madrid, Spain. \\
+& GPA: 9.20/10.0\\
+
+\end{tabular}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+\vspace{\vspac}
+\section{Experience}
+\vspace{\vspac}
+\noindent
+\begin{tabular}{R{\widthone}|p{\widthtwo}}
+\textsc{Aug} 2015 - \textsc{Present}& \textbf{Software Developer - Sensor Fusion} at Volvo Car Corporation\\
+& Development of algorithms for sensor data fusion, including lidar, radar and camera, in the context of Volvo Cars' autonomous driving project \emph{Drive Me}. Experience in high-perfomance computing, safety-critical coding practices as well as the ISO 26262 standard. Agile development and continuous integration workflow.  \\
+&\\
+%------------------------------------------------
+
+\textsc{Jun} 2014 - \textsc{Jul} 2014 & \textbf{Research Engineer} at \textsc{KTH}, Sweden\\
+& Development of an autonomous robot to perform 3D mapping with Kinect-like cameras in hardly accesible environments. Based on ROS, OpenCV and PCL. In collaboration with the Computer Vision and Active Percepction Lab (CVAP) at KTH and Trafikverket (Swedish Transport Administration).\\
 &\\
 
+% --------------------------------------------------
 
+\textsc{Oct} 2012 - \textsc{Oct} 2013 & \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
+& Development of an vision-based parking occupancy estimation system, using OpenCV and Qt libraries. Involved in the national project "Ciudad 2020". In collaboration with the Group of Application of Visual Telecommunications at ETSIT-UPM. 
+Scientific paper published at IET-ITS \cite{Galvez2015}. \\
+&\\
+% --------------------------------------------------
+
+\textsc{Oct} 2011 - \textsc{Oct} 2012 & \textbf{Fellowship} at E.T.S.I.T. UPM\\
+& Development and integration of a new educational platform for the study of ARM microcontrollers at the Electronic Systems Laboratory. In collaboration with the Electrical Engineering Department at ETSIT-UPM.\\
+
+% --------------------------------------------------
+&\\
+\textsc{Oct} 2009 - \textsc{Oct} 2010 &  \textbf{Fellowship} at E.T.S.I.T. UPM, Spain\\
+& Design of an automated optical handwritten character recognition system (OCR), with the aim of making easier and more efficient various teaching and administrative tasks. In collaboration with the Telematics Engineering Department at ETSIT-UPM.\\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS
 %----------------------------------------------------------------------------------------
 \section{Projects}
+\vspace{\vspac}
 \noindent
-\begin{tabular}{R{\widthone}|L{\widthtwo}}
-\textsc{Sep} 2015 - \textsc{Present }& Autonomous quadcopter. \\
+\begin{tabular}{R{\widthone}|p{\widthtwo}}
+\textsc{Sep} 2015 - \textsc{Present }& Autonomous quadcopter based on Arduino Mega 2560 and Raspberry Pi 2. \\
 & \\
 
+\textsc{Mar} 2015 - \textsc{Jun} 2015 & Face detector combining Adaboost and Deep Learning. \\
+& \\
 \textsc{Oct} 2014 - \textsc{Dec} 2014 & Robot for the course DD2425 - Robotics and Autonomous Systems. Award: winner of robot competition \\
 & \\
 
-\textsc{Sep} 2012 - \textsc{Jan} 2013 & Special Project for the course "Digital Electronics Systems Laboratory".  Augmented Reality mobile application to track and control robots, and display additional information on line-following competitions. \\
+\textsc{Sep} 2012 - \textsc{Jan} 2013 & Augmented Reality mobile application to track and control robots. Special Project for the course "Digital Electronics Systems Laboratory".   \\
 & \\
 
-\textsc{Jan} 2012 - \textsc{Jun} 2012 & Design and implementation of line-following robot. Participation in Robotech-UPM and Campus Party robotic competitions. \\
+\textsc{Jan} 2012 - \textsc{Jun} 2012 & Line-following robot. Participation in Robotech-UPM and Campus Party robotic competitions. \\
 & \\
 
-\textsc{Sep} 2011 - \textsc{Jan} 2012 & Project for the course "Introduction to Intelligent Robotics", focused on robot learning based on genetic algorithms. \\
-& \\
+\textsc{Sep} 2011 - \textsc{Jan} 2012 & Predator-prey robot system learning based on genetic algorithms. Project for the course "Introduction to Intelligent Robotics''\\
+
 \end{tabular} 
 
 %----------------------------------------------------------------------------------------
 %	SCHOLARSHIPS AND ADDITIONAL INFO
 %----------------------------------------------------------------------------------------
-
+\vspace{\vspac}
 \section{Honours and Awards}
+\vspace{\vspac}
 \noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 2009 - 2013 & Extraordinary Academic Performance Scholarship (Madrid Government)\\
-
+&\\
 2009 &  Highest Honours in High School. Best academic record. \\
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES
 %----------------------------------------------------------------------------------------
-
+\vspace{\vspac}
 \section{Languages}
+\vspace{\vspac}
 \noindent
-\begin{tabular}{R{\widthone}|L{\widthtwo}}
-\textsc{Spanish:} & Mothertongue\\
-\textsc{English:} & Fluent \emph{TOEFL iBT: 110/120, September 2012 (Spain)} \\
-\textsc{Swedish:} & Advanced, \emph{CEFR: B2, June 2015 (Sweden)}
+\begin{tabular}{R{\widthone}|L{4.75cm} R{7cm}}
+\textsc{Spanish:} & Mothertongue&\\
+&\\
+\textsc{English:} & Fluent &\emph{TOEFL iBT: 110/120, September 2012 (Spain)} \\
+&\\
+\textsc{Swedish:} & Advanced & \emph{CEFR: B2, June 2015 (Sweden)}
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS 
 %----------------------------------------------------------------------------------------
-
+\vspace{\vspac}
 \section{Software skills}
+\vspace{\vspac}
 \noindent
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Proficient} & Java, C, C++, Python, \textsc{Matlab} \& \textsc{Simulink}, OpenCV, PCL, ROS, Qt\\
+&\\
 \textsc{Intermediate} & Linux, CMake, OpenGL, OpenCL, CUDA, Bash scripting, Git, Gerrit, \LaTeX \\
+&\\
 \textsc{Basic} & HTML, CSS, JavaScript, J2EE, SQL, Android, ASM, VHDL\\
-\end{tabular}
-
+\end{tabular}\vspace{\vspac}
+\noindent
 Git repository: \href{https://github.com/carlosgalvezp}{https://github.com/carlosgalvezp}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS AND ACTIVITIES
 %----------------------------------------------------------------------------------------
-
+\vspace{\vspac}
 \section{Interests}
+\vspace{\vspac}
 \noindent
-Travelling, photography, hiking, cycling, reading, movies, music.  
+Travelling, photography, hiking, cycling, reading, movies, music.  \\
+\noindent
+Acquiring new knowledge through online courses (MOOC): Coursera, Udacity, edX.
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
+\vspace{\vspac}
 \section{Publications}
 \noindent
 \begingroup
