@@ -1,3 +1,0 @@
-1) Select XeLaTeX + MakeIndex + BibTex
-2) Copy the Fonts folder to C:/Users/Carlos/AppData/Local/Miktex2.9/Fonts/opentype
-3) Compile
