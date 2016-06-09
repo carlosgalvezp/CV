@@ -2,7 +2,8 @@
 % Plasmati Graduate CV
 % LaTeX Template
 % Version 1.0 (24/3/13)
-%
+% 
+% Modified by: Carlos Galvez. Doesn't require XeLaTeX anymore
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
 %
@@ -25,16 +26,10 @@
 
 \documentclass[a4paper,12pt]{article} % Default font size and paper size
 
-\usepackage{fontspec} % For loading fonts
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
-
-\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
-
 \usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+\usepackage[utf8]{inputenc}
 
-\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
-% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+\usepackage{fullpage}
 
 \usepackage{hyperref} % Required for adding links	and customizing them
 \definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
@@ -57,8 +52,6 @@
 
 \pagestyle{empty} % Removes page numbering
 
-\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
-
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -68,7 +61,7 @@
 \section{Personal Information}
 
 \begin{tabular}{R{\widthone}L{\widthtwo}}
-\textsc{Date of Birth:} & December 29\textsuperscript{th}  1991.  \\
+\textsc{Date of Birth} & December 29\textsuperscript{th}  1991.  \\
 \textsc{Nationality:} & Spanish. \\
 \textsc{Address:} & Nordostpassagen 23 Lgh 1203, 413 11 Gothenburg, Sweden.\\
 \textsc{Mobile Phone:} & +46 720328047\\
@@ -189,7 +182,7 @@
 \section{Software skills}
 \begin{tabular}{R{\widthone}|L{\widthtwo}}
 \textsc{Proficient} & Java, C, C++, \textsc{Matlab} \& \textsc{Simulink}, OpenCV, PCL, ROS, Qt\\
-\textsc{Intermediate} & OpenGL, OpenCL, CUDA, Bash scripting, Git, Gerrit, {\fb \LaTeX} \\
+\textsc{Intermediate} & OpenGL, OpenCL, CUDA, Bash scripting, Git, Gerrit, \LaTeX \\
 \textsc{Basic} & HTML, CSS, JavaScript, J2EE, SQL, Android, ASM, VHDL\\
 \end{tabular}
 
